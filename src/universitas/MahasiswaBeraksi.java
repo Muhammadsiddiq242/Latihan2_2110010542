@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package universitas;
 
-/**
- *
- * @author Windows 10 Pro
- */
+
 public class MahasiswaBeraksi {
+    public static void main (String[] args){
+         // Membuat objek mahasiswa
+        Mahasiswa mhs = new Mahasiswa("12345", "John Doe", "Informatika");
+
+        // Mengakses dan mencetak informasi mahasiswa
+        System.out.println("NPM: " + mhs.getNpm());
+        System.out.println("Nama: " + mhs.getNama());
+        System.out.println("Prodi: " + mhs.getProdi());
+
+        // Mengubah informasi mahasiswa menggunakan setter
+        mhs.setNpm("54321");
+        mhs.setNama("Muhammad siddiq");
+        mhs.setProdi("Tekologi Informasi");
+
+        // Mencetak informasi mahasiswa setelah diubah
+        System.out.println("NPM: " + mhs.getNpm());
+        System.out.println("Nama: " + mhs.getNama());
+        System.out.println("Prodi: " + mhs.getProdi());
     
+    }
 }
